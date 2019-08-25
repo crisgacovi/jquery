@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor Estudiantes</title>
+
+    
+</head>
+<body>
+    
+    <h2>Registro Estudiante</h2>
+
+        <form>
+            <div>
+                <label for="codigo">Código: </label><br>
+                <input type="number" id="codigo" min="1">
+            </div>
+            <div>
+                <label for="nombre">Nombre: </label><br>
+                <input type="text" id="nombre">
+            </div>
+            <div>
+                <label for="nota">Nota: </label><br>
+                <input type="number" id="nota" min="0" max="5">
+            </div><br>
+            <button type="button" id="registroEstudiante">Registrar Estudiante</button>
+        </form>
+
+        <hr>
+
+       	<h2>Operaciones</h2>
+
+        <div>
+            <button id="calculoPromedio">Nota Promedio</button>
+            <button id="calculoNotaMayor">Nota Mayor</button>
+            <button id="calculoNotaMenor">Nota Menor</button>
+        </div>
+
+        <hr>
+
+		<h2>Listado de Estudiantes</h2>
+
+        <table border="1">
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nombre</th>
+                <th>Nota</th>
+            </tr>
+            </thead>
+            <tbody id="notas">
+            </tbody>
+        </table>
+        
+    
+
+
+<script type="application/javascript" src="js/jquery.js"></script>
+<script type="application/javascript" src="js/app.js"></script>
+</body>
+</html>
